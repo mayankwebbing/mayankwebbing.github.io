@@ -73,8 +73,8 @@
                         <li><a class="nav-link active" data-scroll-nav="0" href="/#home"><span>Home</span></a></li>
                         <li><a class="nav-link" data-scroll-nav="1" href="/#about"><span>About</span></a></li>
                         <li><a class="nav-link" data-scroll-nav="5" href="/#contactme"><span>Contact</span></a></li>
-                        <li><a class="nav-link" data-scroll-nav="2" href="/Projects"><span>Projects</span></a></li>
-                        <li><a class="nav-link" data-scroll-nav="4" href="/Blogs"><span>Blogs</span></a></li>
+                        <li><a class="nav-link" href="/Projects"><span>Projects</span></a></li>
+                        <li><a class="nav-link" href="/Blogs"><span>Blogs</span></a></li>
                     </ul>
                 </div>
                 <!-- / -->
@@ -448,30 +448,28 @@
                                 <div class="row">
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input name="Name" id="name" placeholder="Name *" class="form-control" type="text">
+                                            <input name="Name" id="name" placeholder="Name *" class="form-control" type="text" required>
                                         </div>
                                     </div>
                                     <div class="col-md-6">
                                         <div class="form-group">
-                                            <input name="Email" id="email" placeholder="Email *" class="form-control" type="email">
+                                            <input name="Email" id="email" placeholder="Email *" class="form-control" type="email" required>
                                         </div>
                                     </div>
                                     <div class="col-12">
                                         <div class="form-group">
-                                            <input name="Subject" id="subject" placeholder="Subject *" class="form-control" type="text">
+                                            <input name="Subject" id="subject" placeholder="Subject *" class="form-control" type="text" required>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="form-group">
-                                            <textarea name="message" id="message" placeholder="Your message *" rows="3" class="form-control"></textarea>
+                                            <textarea name="message" id="message" placeholder="Your message *" rows="3" class="form-control"required ></textarea>
                                         </div>
                                     </div>
                                     <div class="col-md-12">
                                         <div class="send">
                                             <button class="px-btn px-btn-white" type="submit" value="Send"><span>Contact Us</span></button>
                                         </div>
-                                        <span id="suce_message" class="text-success" style="display: none">Message Sent Successfully</span>
-                                        <span id="err_message" class="text-danger" style="display: none">Message Sending Failed</span>
                                     </div>
                                 </div>
                             </form>
