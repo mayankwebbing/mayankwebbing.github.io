@@ -1,0 +1,55 @@
+<link rel="stylesheet" href="style.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type="text/javascript">
+    $(document).ready(function() {
+        RandomQue();
+    });
+
+    function RandomQue() {
+        var value;
+        var rnd = Math.floor(Math.random() * 11);
+
+        if (rnd === 1)
+            value = "<h1>The Firefox logo isn’t a fox.</h1><h3 style=\"color: rgb(16, 16, 16);\">There is a common misbelief that because the browser is named Firefox, the logo must be a fox.<br>Surprisingly, the cute furry creature in the logo is actually a red panda!</h3>";
+        else if (rnd === 2)
+            value = "<h1><b>The first Apple logo isn’t what you would think.</b></h1><h3 style=\"color: rgb(16, 16, 16);\">Originally, it featured Sir Isaac Newton sitting beneath a tree, with an apple about to fall on his head.<br>It was designed back in 1976 and featured a phrase around the border that read“ Newton… A mind forever voyaging through strange seas of thought… alone”.</h3>";
+        else if (rnd === 3)
+            value = "<h1><b>The first Apple logo isn’t what you would think.</b></h1><h3 style=\"color: rgb(16, 16, 16);\">You read that right, instead of mowing their lawn, Google rents goats to eat the grass at their Mountain View headquarters.<br>A herder will bring 200 goats which are herded by a border collie named Jen.</h3>";
+        else if (rnd === 4)
+            value = "<h1><b>The name for “robot” has dark origins.</b></h1><h3 style=\"color: rgb(16, 16, 16);\">If you look into the etymology of “robot,” it comes from the Czech word “robota” which translates to forced labor or work.<br>The word was first used to refer to a fictional humanoid in a play in 1920.</h3>";
+        else if (rnd === 5)
+            value = "<h1><b>Samsung is 38 years and 1 month older than Apple.</b></h1><h3 style=\"color: rgb(16, 16, 16);\">Samsung was founded as a grocery store on March 1, 1938, by Lee Byung-Chull.<br>Apple Founders Steve Jobs and Steve Wozniak created Apple Computer Inc.on April 1, 1976.</h3>";
+        else if (rnd === 6)
+            value = "<h1><b>A Petabyte is a lot of data.</b></h1><h3 style=\"color: rgb(16, 16, 16);\">We all know 1 GB is the same as 1024 MB, but did you know that 1 petabyte (PB) is equivalent to 1024 terabytes (TB)?</h3>";
+        else if (rnd === 7)
+            value = "<h1><b>Domain name registration used to be free.</b></h1><h3 style=\"color: rgb(16, 16, 16);\">Way back when people didn’t realize how huge the internet would be, registering a domain name was free until 1995.<br>When a fee was introduced, it was high! Prices were typically $100 for two years of registration.</h3>";
+        else if (rnd === 8)
+            value = "<h1><b>Megabytes used to weigh hundreds of pounds.</b></h1><h3 style=\"color: rgb(16, 16, 16);\">More specifically, 5 megabytes of data weighed one ton.<br>In 1956, the first computer had something similar to a hard drive.<br>At the time, it was a huge leap in storage capabilities, but the cabinet that contained the hard drive weighed over 2, 200 pounds and could hold 5 MBs of data.</h3>";
+        else if (rnd === 9)
+            value = "<h1><b>The Radio took 38 years to reach an audience of 50 million.</b></h1><h3 style=\"color: rgb(16, 16, 16);\">You would think the invention of the radio would be a big deal, but it took 38 years for the radio to reach an audience of 50 million.<br>Meanwhile, the iPod only took 3 years to reach the same milestone!</h3>";
+        else if (rnd === 10)
+            value = "<h1><b>GPS is free… for some.</b></h1><h3 style=\"color: rgb(16, 16, 16);\">Even though it is free to use GPS globally, it costs $2 million dollars to operate every day.</h3>";
+        else
+            value = "<h1><b>Alexa is always listening to your conversations.</b></h1><h3 style=\"color: rgb(16, 16, 16);\"> This probably isn’ t new to you.Siri has been doing it forever. <br> Alexa stores your dialogue history to its cloud to help improve your Alexa experience. <br> But, you can review and delete these recordings, either in bulk, or individually. </h3>";
+
+        $('#waitq').append(value);
+    }
+</script>
+
+<div class="div1" id="waitq" name="waitq" type="text">
+    <h3 style="color: darkblue;">Here's a fact:</h3>
+    <hr>
+</div>
+<div id="container">
+
+    <div class="divider " aria-hidden="true "></div>
+    <p class="loading-text " aria-label="Loading " style="text-align: center;">
+        <span class="letter " aria-hidden="true ">L</span>
+        <span class="letter " aria-hidden="true ">o</span>
+        <span class="letter " aria-hidden="true ">a</span>
+        <span class="letter " aria-hidden="true ">d</span>
+        <span class="letter " aria-hidden="true ">i</span>
+        <span class="letter " aria-hidden="true ">n</span>
+        <span class="letter " aria-hidden="true ">g</span>
+    </p>
+</div>
